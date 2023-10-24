@@ -21,29 +21,24 @@ body {
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .05rem;
+    gap: 3rem;
 }
 .container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     display: grid;
     grid-template: 1fr / 1fr;
-    max-width: 110ex;
+    max-width: 120ex;
     justify-items: center;
     gap: var(--medium-padding);
 }
-ul {
+ul,
+ol {
     display: grid;
     gap: 1rem;
-    padding-top: var(--small-padding);
-    padding-bottom: var(--small-padding);
-}
-li {
-    list-style: none;
-    /*padding-left: var(--medium-padding);*/
+    padding: var(--small-padding);
 }
 .double-column {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     padding-top: var(--small-padding);
     padding-bottom: var(--small-padding);
 }
@@ -57,7 +52,9 @@ p {
     margin-bottom: var(--tiny-padding);
 }
 .title {
-    margin-top: var(--big-padding);
+    padding-top: var(--big-padding);
+    padding-left: var(--big-padding);
+    padding-right: var(--big-padding);
 }
 .example {
     display: inline-block;
