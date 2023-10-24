@@ -20,7 +20,6 @@ body {
     font-size: 1.1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .05rem;
-
 }
 .container {
     padding-top: 3rem;
@@ -58,7 +57,7 @@ p{
     margin-bottom: var(--tiny-padding);
 }
 .title {
-    margin-top: var(--medium-padding);
+    margin-top: var(--big-padding);
 }
 .example {
     display: inline-block;
