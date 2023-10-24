@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template: 1fr / 1fr;
     justify-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .05rem;
 }
@@ -34,8 +34,8 @@ body {
 ul {
     display: grid;
     gap: 1rem;
-    margin-top: var(--medium-padding);
-    
+    padding-top: var(--small-padding);
+    padding-bottom: var(--small-padding);
 }
 li {
     list-style: none;
@@ -52,7 +52,7 @@ li {
     border-radius: var(--border-radius);
     padding: var(--big-padding);
 }
-p{
+p {
     margin-top: var(--tiny-padding);
     margin-bottom: var(--tiny-padding);
 }
