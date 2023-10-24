@@ -52,9 +52,6 @@ p {
     margin-bottom: var(--tiny-padding);
 }
 .title {
-    padding-top: var(--big-padding);
-    padding-left: var(--big-padding);
-    padding-right: var(--big-padding);
 }
 .example {
     display: inline-block;
@@ -66,4 +63,22 @@ p {
 .sub {
     padding-left: var(--small-padding);
     font-weight: bold;
+}
+.footer.section.container {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+}
+.footer.section,
+.footer.section.container {
+    
+    padding: var(--medium-padding);
+}
+.header.section.container {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 100%;
+}
+.madebyrisu {
+    font-size: .9rem;
 }
