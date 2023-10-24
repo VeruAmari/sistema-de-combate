@@ -1,6 +1,6 @@
 :root {
 --light-color: #f5fdff;
---dark-color: #e7e5e6;
+--dark-color: #E7E9EB;
 --border-radius: 15px;
 --medium-padding: 2rem;
 --small-padding: 1rem;
@@ -26,7 +26,7 @@ body {
     display: grid;
     grid-template: 1fr / 1fr;
     width: 80vw;
-    max-width: 90ex;
+    max-width: 100ex;
     justify-items: center;
     gap: var(--medium-padding);
 }
@@ -38,7 +38,7 @@ ul {
 }
 li {
     list-style: none;
-    padding-left: var(--medium-padding);
+    /*padding-left: var(--medium-padding);*/
 }
 .double-column {
     display: grid;
@@ -66,6 +66,5 @@ p{
 }
 .sub {
     padding-left: var(--small-padding);
-    font-style: italic;
     font-weight: bold;
 }
