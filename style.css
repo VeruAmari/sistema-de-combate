@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 :root {
 --light-color: #f5fdff;
 --dark-color: #E7E9EB;
@@ -9,15 +14,11 @@
 
 background-color: var(--dark-color);
 }
-* {
-    margin: 0px;
-    padding: 0px;
-}
+
 body {
     display: grid;
-    grid-template: 1fr / 1fr;
     justify-items: center;
-    font-size: 1rem;
+    justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .05rem;
 }
@@ -26,7 +27,6 @@ body {
     padding-bottom: 3rem;
     display: grid;
     grid-template: 1fr / 1fr;
-    width: 80vw;
     max-width: 110ex;
     justify-items: center;
     gap: var(--medium-padding);
