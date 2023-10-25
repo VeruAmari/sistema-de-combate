@@ -18,7 +18,7 @@ background-color: var(--dark-color);
 
 body {
     display: grid;
-    grid-template-rows: 3rem 1fr 2rem;
+    grid-template-rows: 25vh 1fr 12vh;
     justify-items: center;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -66,19 +66,19 @@ p {
     padding-left: var(--small-padding);
     font-weight: bold;
 }
-.footer.section.container {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    width: 100%;
-}
 .footer.section,
-.footer.section.container {
+.footer {
     
     padding: var(--medium-padding);
 }
-.header {
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+.header,
+.footer:not(.section) {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
     background-color: var(--light-color);
     width: 100vw;
 }
