@@ -3,8 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 :root {
---light-color: #f5fdff;
+--light-color: #fff;
 --dark-color: #E7E9EB;
 --border-radius: 15px;
 --big-padding: 3rem;
@@ -17,6 +18,7 @@ background-color: var(--dark-color);
 
 body {
     display: grid;
+    grid-template-rows: 3rem 1fr 2rem;
     justify-items: center;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -74,10 +76,11 @@ p {
     
     padding: var(--medium-padding);
 }
-.header.section.container {
+.header {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    width: 100%;
+    background-color: var(--light-color);
+    width: 100vw;
 }
 .madebyrisu {
     font-size: .9rem;
