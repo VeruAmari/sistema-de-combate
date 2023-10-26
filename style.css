@@ -6,8 +6,12 @@
 
 :root {
 --light-color: #fff;
---dark-color: #E7E9EB;
---border-radius: 15px;
+--light-color-2: #ffeffc;
+--dark-color: #99c9be;
+--highlight-color: #3b1f3b;
+--highlight-color-2: #0B5351;
+--highlight-color-3: #4b8ead;
+--border-radius: 7px;
 --big-padding: 3rem;
 --medium-padding: 2rem;
 --small-padding: 1rem;
@@ -31,6 +35,7 @@ body {
     max-width: 120ex;
     justify-items: center;
     gap: var(--medium-padding);
+    color: var(--highlight-color-2);
 }
 ul,
 ol {
@@ -48,6 +53,11 @@ ol {
     background-color: var(--light-color);
     border-radius: var(--border-radius);
     padding: var(--big-padding);
+    border-left: solid var(--border-radius) var(--highlight-color);
+    border-right: solid var(--border-radius) var(--highlight-color);
+    width: 100%;
+}
+.section:hover {
 }
 p {
     margin-top: var(--tiny-padding);
@@ -79,9 +89,28 @@ p {
     justify-content: center;
     justify-items: center;
     gap: 1rem;
-    background-color: var(--light-color);
+    background-color: var(--highlight-color);
+    color: var(--light-color);
     width: 100vw;
+}
+.header {
+    font-size: 1.5rem;
 }
 .madebyrisu {
     font-size: .9rem;
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--highlight-color-2);
+}
+a:hover,
+h1:hover,
+h2:hover,
+h3:hover {
+    color: var(--highlight-color-3);
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
