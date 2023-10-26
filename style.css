@@ -22,7 +22,7 @@ background-color: var(--dark-color);
 
 body {
     display: grid;
-    grid-template-rows: 25vh 1fr 12vh;
+    grid-template-rows: 30vh 1fr 12vh;
     justify-items: center;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -36,6 +36,8 @@ body {
     justify-items: center;
     gap: var(--medium-padding);
     color: var(--highlight-color-2);
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 ul,
 ol {
@@ -56,8 +58,6 @@ ol {
     border-left: solid var(--border-radius) var(--highlight-color);
     border-right: solid var(--border-radius) var(--highlight-color);
     width: 100%;
-}
-.section:hover {
 }
 p {
     margin-top: var(--tiny-padding);
@@ -94,7 +94,7 @@ p {
     width: 100vw;
 }
 .header {
-    font-size: 1.5rem;
+    font-size: calc(1rem + 1vw);
 }
 .madebyrisu {
     font-size: .9rem;
