@@ -1,116 +1,115 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
---light-color: #fff;
---light-color-2: #ffeffc;
---dark-color: #99c9be;
---highlight-color: #3b1f3b;
---highlight-color-2: #0B5351;
---highlight-color-3: #4b8ead;
---border-radius: 7px;
---big-padding: 3rem;
---medium-padding: 2rem;
---small-padding: 1rem;
---tiny-padding: .5rem;
-
-background-color: var(--dark-color);
+  --light-color: #fff;
+  --light-color-2: #ffeffc;
+  --dark-color: #99c9be;
+  --highlight-color: #3b1f3b;
+  --highlight-color-2: #0b5351;
+  --highlight-color-3: #4b8ead;
+  --border-radius: 7px;
+  --big-padding: 3rem;
+  --medium-padding: 2rem;
+  --small-padding: 1rem;
+  --tiny-padding: 0.5rem;
+  font-size: 1.1rem;
+  background-color: var(--dark-color);
 }
 
 body {
-    display: grid;
-    grid-template-rows: 30vh 1fr 12vh;
-    justify-items: center;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: .05rem;
-    gap: 3rem;
+  display: grid;
+  grid-template-rows: 30vh 1fr 12vh;
+  justify-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.05rem;
+  gap: 3rem;
 }
 .container {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    max-width: 120ex;
-    justify-items: center;
-    gap: var(--medium-padding);
-    color: var(--highlight-color-2);
-    margin-left: 5vw;
-    margin-right: 5vw;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  max-width: 120ex;
+  justify-items: center;
+  gap: var(--medium-padding);
+  color: var(--highlight-color-2);
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 ul,
 ol {
-    display: grid;
-    gap: 1rem;
-    padding: var(--small-padding);
+  display: grid;
+  gap: 1rem;
+  padding: var(--small-padding);
 }
 .double-column {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    padding-top: var(--small-padding);
-    padding-bottom: var(--small-padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding-top: var(--small-padding);
+  padding-bottom: var(--small-padding);
 }
 .section {
-    background-color: var(--light-color);
-    border-radius: var(--border-radius);
-    padding: var(--big-padding);
-    border-left: solid var(--border-radius) var(--highlight-color);
-    border-right: solid var(--border-radius) var(--highlight-color);
-    width: 100%;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  padding: var(--big-padding);
+  border-left: solid var(--border-radius) var(--highlight-color);
+  border-right: solid var(--border-radius) var(--highlight-color);
+  width: 100%;
 }
 p {
-    margin-top: var(--tiny-padding);
-    margin-bottom: var(--tiny-padding);
+  margin-top: var(--tiny-padding);
+  margin-bottom: var(--tiny-padding);
 }
 .title {
 }
 .example {
-    display: inline-block;
-    font-size: .9rem;
-    font-style: italic;
-    padding: .5rem;
-    color: #777;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 0.5rem;
+  color: #555;
 }
 .sub {
-    padding-left: var(--small-padding);
-    font-weight: bold;
+  padding-left: var(--small-padding);
+  font-weight: bold;
 }
 .footer.section,
 .footer {
-    
-    padding: var(--medium-padding);
+  padding: var(--medium-padding);
 }
 .header,
 .footer:not(.section) {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    gap: 1rem;
-    background-color: var(--highlight-color);
-    color: var(--light-color);
-    width: 100vw;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  background-color: var(--highlight-color);
+  color: var(--light-color);
+  width: 100vw;
 }
 .header {
-    font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 .madebyrisu {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--highlight-color-2);
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--highlight-color-2);
 }
 a:hover,
 h1:hover,
 h2:hover,
 h3:hover {
-    color: var(--highlight-color-3);
+  color: var(--highlight-color-3);
 }
 a:hover {
-    text-decoration: underline;
-    font-weight: bold;
+  text-decoration: underline;
+  font-weight: bold;
 }
